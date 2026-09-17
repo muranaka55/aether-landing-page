@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&AElig;ther Inc. - テクノロジーで未来を実装する</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <div class="header__logo-icon">&AElig;</div>
+                <span class="header__logo-text">&AElig;ther</span>
+            </div>
+            
+            <nav class="header__nav">
+                <a href="#features" class="header__nav-link">プロダクト</a>
+                <a href="#work" class="header__nav-link">実績</a>
+                <a href="#contact" class="header__nav-button">お問合せ</a>
+            </nav>
+
+            <button class="header__hamburger" id="hamburger-toggle" aria-label="メニューを開閉">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#features" class="mobile-menu__link">プロダクト</a>
+        <a href="#work" class="mobile-menu__link">実績</a>
+        <a href="#contact" class="mobile-menu__button">お問合せ →</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    <span class="hero__badge-text">v2.0 — AI統合エンジン搭載</span>
+                </div>
+                <h1 class="hero__title">テクノロジーで<br><span class="grad">未来を実装</span>する。</h1>
+                <p class="hero__description">AIとクラウドネイティブで、あなたのビジネスをスケールさせる。設計・開発・運用まで一気通貫で担当します。</p>
+                <div class="hero__actions">
+                    <a href="#contact" class="hero__btn-primary">お問合せ →</a>
+                    <a href="#features" class="hero__btn-secondary">機能を見る</a>
+                </div>
+                <div class="hero__metrics">
+                    <div class="hero__metric-item">
+                        <div class="hero__metric-value grad">120+</div>
+                        <div class="hero__metric-label">導入企業</div>
+                    </div>
+                    <div class="hero__metric-item">
+                        <div class="hero__metric-value grad">99.9%</div>
+                        <div class="hero__metric-label">SLA稼働率</div>
+                    </div>
+                    <div class="hero__metric-item">
+                        <div class="hero__metric-value grad">3日〜</div>
+                        <div class="hero__metric-label">最短対応</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__media">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&auto=format" alt="チーム" class="hero__image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Strip -->
+    <div class="logo-strip">
+        <div class="logo-strip__track" id="logo-track">
+            <span class="logo-strip__item">Toyota</span>
+            <span class="logo-strip__item">Sony</span>
+            <span class="logo-strip__item">Recruit</span>
+            <span class="logo-strip__item">Mercari</span>
+            <span class="logo-strip__item">Freee</span>
+            <span class="logo-strip__item">SmartHR</span>
+            <span class="logo-strip__item">Sansan</span>
+            <span class="logo-strip__item">LayerX</span>
+        </div>
+    </div>
+
+    <!-- Features Section Divider -->
+    <div class="section-divider" id="features">
+        <div class="section-divider__dot"></div>
+        <span class="section-divider__label">Product Features</span>
+    </div>
+
+    <!-- Feature 1 -->
+    <article class="feature-block">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&h=700&fit=crop&auto=format" alt="AI" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">01</div>
+            <div class="feature-block__badge">📈 精度 94.2%</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">AI Integration</span>
+            </div>
+            <h2 class="feature-block__title">AIエージェントを<br><span class="grad">プロダクションへ。</span></h2>
+            <p class="feature-block__desc">GPT-4o・Claude 3をシームレスに統合。RAGアーキテクチャで社内ナレッジと接続し、幻覚のない信頼できるAI体験を提供します。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">LangChain</span>
+                <span class="feature-block__tag">RAG</span>
+                <span class="feature-block__tag">GPT-4o</span>
+                <span class="feature-block__tag">Streaming</span>
+            </div>
+            <a href="#contact" class="feature-block__link">詳細を見る →</a>
+        </div>
+    </article>
+
+    <!-- Feature 2 (Flip) -->
+    <article class="feature-block feature-block--flip">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=700&fit=crop&auto=format" alt="Infrastructure" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">02</div>
+            <div class="feature-block__badge">🟢 SLA 99.9%</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Infrastructure</span>
+            </div>
+            <h2 class="feature-block__title">ゼロダウンタイムで<br><span class="grad">スケールする。</span></h2>
+            <p class="feature-block__desc">Kubernetes + Istioによる自動スケール。SLA 99.9%を全顧客に保証。トラフィックスパイク時も無停止で対応します。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">Kubernetes</span>
+                <span class="feature-block__tag">AWS</span>
+                <span class="feature-block__tag">Terraform</span>
+                <span class="feature-block__tag">ArgoCD</span>
+            </div>
+            <a href="#contact" class="feature-block__link">詳細を見る →</a>
+        </div>
+    </article>
+
+    <!-- Feature 3 -->
+    <article class="feature-block">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&h=700&fit=crop&auto=format" alt="Developer Experience" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">03</div>
+            <div class="feature-block__badge">⚡ 87s deploy</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Developer Experience</span>
+            </div>
+            <h2 class="feature-block__title">開発速度を<br><span class="grad">3倍に。</span></h2>
+            <p class="feature-block__desc">最新のモノレポ構成とCI/CDパイプラインで、コードプッシュからプロダクション反映まで平均87秒。開発者体験に妥協しません。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">Next.js</span>
+                <span class="feature-block__tag">TypeScript</span>
+                <span class="feature-block__tag">Turborepo</span>
+                <span class="feature-block__tag">GitHub Actions</span>
+            </div>
+            <a href="#contact" class="feature-block__link">詳細を見る →</a>
+        </div>
+    </article>
+
+    <!-- Feature 4 (Flip) -->
+    <article class="feature-block feature-block--flip">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=700&fit=crop&auto=format" alt="Security" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">04</div>
+            <div class="feature-block__badge">🔐 SOC 2 Type II</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Security</span>
+            </div>
+            <h2 class="feature-block__title"><span class="grad">エンタープライズ</span>セキュリティ。</h2>
+            <p class="feature-block__desc">SOC 2 Type II準拠。ゼロトラストアーキテクチャと暗号化で、大企業のセキュリティ要件を完全にクリアします。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">SOC 2 Type II</span>
+                <span class="feature-block__tag">Zero Trust</span>
+                <span class="feature-block__tag">AES-256</span>
+                <span class="feature-block__tag">SAML/SSO</span>
+            </div>
+            <a href="#contact" class="feature-block__link">詳細を見る →</a>
+        </div>
+    </article>
+
+    <!-- Case Studies Section Divider -->
+    <div class="section-divider" id="work">
+        <div class="section-divider__dot"></div>
+        <span class="section-divider__label">Case Studies</span>
+    </div>
+
+    <!-- Case 1 -->
+    <article class="feature-block">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&h=700&fit=crop&auto=format" alt="Kaika Capital" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">05</div>
+            <div class="feature-block__badge">📈 精度 +94%</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Case Study</span>
+            </div>
+            <h2 class="feature-block__title">Kaika <span class="grad">AI Platform</span></h2>
+            <p class="feature-block__desc">RAGベースのAIエージェントを設計・本番投入。社内ドキュメント10万件をベクトル化し、投資判断の精度と速度を大幅に改善しました。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">AI/ML</span>
+                <span class="feature-block__tag">LangChain</span>
+                <span class="feature-block__tag">Python</span>
+                <span class="feature-block__tag">FastAPI</span>
+            </div>
+            <a href="#contact" class="feature-block__link">事例を読む →</a>
+        </div>
+    </article>
+
+    <!-- Case 2 (Flip) -->
+    <article class="feature-block feature-block--flip">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&h=700&fit=crop&auto=format" alt="Mori Architecture" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">06</div>
+            <div class="feature-block__badge">💰 コスト −42%</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Case Study</span>
+            </div>
+            <h2 class="feature-block__title">Mori <span class="grad">Cloud Migration</span></h2>
+            <p class="feature-block__desc">オンプレミスからAWSへのゼロダウンタイム移行。マイクロサービス化によりデプロイ頻度が週1回から1日50回以上に向上しました。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">AWS</span>
+                <span class="feature-block__tag">Kubernetes</span>
+                <span class="feature-block__tag">Go</span>
+                <span class="feature-block__tag">Istio</span>
+            </div>
+            <a href="#contact" class="feature-block__link">事例を読む →</a>
+        </div>
+    </article>
+
+    <!-- Case 3 -->
+    <article class="feature-block">
+        <div class="feature-block__media">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=900&h=700&fit=crop&auto=format" alt="Akira SaaS" class="feature-block__img" />
+            <div class="feature-block__overlay"></div>
+            <div class="feature-block__num">07</div>
+            <div class="feature-block__badge">🚀 ARR 1.2億円</div>
+        </div>
+        <div class="feature-block__content">
+            <div class="feature-block__eyebrow">
+                <div class="feature-block__eyebrow-line"></div>
+                <span class="feature-block__eyebrow-text">Case Study</span>
+            </div>
+            <h2 class="feature-block__title">Akira <span class="grad">SaaS Platform</span></h2>
+            <p class="feature-block__desc">0→1のSaaSプロダクト開発。PMFまで18ヶ月。TypeScriptフルスタックで型安全な設計を徹底し、バグ率を業界平均の1/5に抑制。</p>
+            <div class="feature-block__tags">
+                <span class="feature-block__tag">Next.js</span>
+                <span class="feature-block__tag">TypeScript</span>
+                <span class="feature-block__tag">Stripe</span>
+                <span class="feature-block__tag">Supabase</span>
+            </div>
+            <a href="#contact" class="feature-block__link">事例を読む →</a>
+        </div>
+    </article>
+
+    <!-- Contact Section Divider -->
+    <div class="section-divider" id="contact">
+        <div class="section-divider__dot"></div>
+        <span class="section-divider__label">Contact</span>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact__container">
+            <div class="contact__info">
+                <div class="contact__eyebrow">
+                    <div class="contact__eyebrow-line"></div>
+                    <span class="contact__eyebrow-text">Contact</span>
+                </div>
+                <h2 class="contact__title">
+                    <span class="grad">弊社へ<br />問い合わせる</span>
+                </h2>
+                <p class="contact__desc">
+                    まずは30分のお問合せから。課題をお聞きし、最適な技術スタックと進め方をご提案します。
+                </p>
+                <div class="contact__details">
+                    <div class="contact__detail-item">
+                        <span class="contact__detail-key">EMAIL</span>
+                        <span class="contact__detail-val">hello@aether.jp</span>
+                    </div>
+                    <div class="contact__detail-item">
+                        <span class="contact__detail-key">OFFICE</span>
+                        <span class="contact__detail-val">東京都渋谷区神南 1-2-3</span>
+                    </div>
+                    <div class="contact__detail-item">
+                        <span class="contact__detail-key">HOURS</span>
+                        <span class="contact__detail-val">平日 10:00〜18:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__form-wrapper">
+                <form id="contact-form" class="form">
+                    <div class="form__row">
+                        <input class="form__input" placeholder="お名前" required />
+                        <input class="form__input" type="email" placeholder="メールアドレス" required />
+                    </div>
+                    <textarea class="form__textarea" placeholder="プロジェクトの概要・ご要望" required></textarea>
+                    <button type="submit" class="form__submit">お問合せ →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__brand">
+            <div class="footer__logo">&AElig;</div>
+            <span class="footer__title">&AElig;ther Inc.</span>
+        </div>
+        <span class="footer__copy">&copy; 2026 &AElig;ther Inc.</span>
+        <div class="footer__socials">
+            <a href="#" class="footer__social-link">Facebook</a>
+            <a href="#" class="footer__social-link">Twitter/X</a>
+            <a href="#" class="footer__social-link">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
