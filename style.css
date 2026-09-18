@@ -5,8 +5,9 @@
     --muted:    #9794ae;
     --dim:      #6e6ba8;
     --border:   rgb(47, 41, 41);
-    --accent:   #8b5cf6;
-    --accent2:  #22d3ee;
+    --accent:   #9046ff;
+    --accent2:  #1dfbdd;
+    --purple-text: #A7A8FF;
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
   }
@@ -152,8 +153,8 @@
   .feature-block__eyebrow {
     display: flex; align-items: center; gap: 10px; margin-bottom: 28px;
   }
-  .feature-block__eyebrow-line { width: 20px; height: 1px; background: var(--accent); }
-  .feature-block__eyebrow-text { font-family: var(--font-mono); font-size: 11px; color: var(--accent); letter-spacing: .12em; text-transform: uppercase; }
+  .feature-block__eyebrow-line { width: 20px; height: 1px; background: var(--muted); }
+  .feature-block__eyebrow-text { font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
   
   .feature-block__title {
     font-size: clamp(30px, 5vw, 50px);font-weight: 800; letter-spacing: -.04em; line-height: 1.08; margin-bottom: 20px;
@@ -164,11 +165,11 @@
   .feature-block__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
   .feature-block__tag {
     font-family: var(--font-mono); font-size: 11px; background: rgba(139,92,246,.1);
-    color: var(--accent); border: 1px solid rgba(139,92,246,.22); padding: 4px 12px; border-radius: 6px; display: inline-flex;
+    color: var( --purple-text); border: 1px solid rgba(161, 123, 251, 0.22); padding: 4px 12px; border-radius: 6px; display: inline-flex;
     width: auto;;
   }
   .feature-block__link {
-    align-self: flex-start; font-family: var(--font-mono); font-size: 13px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(139,92,246,.35); padding-bottom: 2px;
+    align-self: flex-start; font-family: var(--font-mono); font-size: 13px; color: var(--purple-text); text-decoration: none; border-bottom: 1px solid rgba(139,92,246,.35); padding-bottom: 2px;
   }
   
   /* Section Divider */
