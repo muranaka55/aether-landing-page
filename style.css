@@ -192,7 +192,7 @@
   .contact__desc { font-size: 15px; color: var(--muted); line-height: 1.85; margin: 0 0 44px; max-width: 380px; }
   .contact__details { display: flex; flex-direction: column; gap: 16px; }
   .contact__detail-item { display: flex; gap: 16px; align-items: center; }
-  .contact__detail-key { font-family: var(--font-mono); font-size: 9px; color: var(--dim); letter-spacing: .14em; min-width: 48px; }
+  .contact__detail-key { font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: .14em; min-width: 48px; }
   .contact__detail-val { font-family: var(--font-mono); font-size: 13px; color: #9090c0; }
   
   /* Form */
